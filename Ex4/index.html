@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="style.css">
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="exercise">
+    <br>Click the blue or red box to change color<br>
+    <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
+    <div class="demo" @click="attachRed = !attachRed" :class="divClasses2"></div>
+
+
+    <div class="demo" :class="color"></div>
+
+
+
+
+    <div class="demo"></div>
+
+    <br>Type: Green, Blue, or Red<br><input type="text" v-model="color">
+
+</div>
+
+<script src="./app.js"></script>
